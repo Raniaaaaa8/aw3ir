@@ -1,124 +1,98 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <script type="text/javascript" src="formulaire.js"></script>
-    <link rel="stylesheet" href="tp2.css" />
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>TP2</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <!-- Place favicon.ico in the root directory -->
-
-    <style>
-      body {
-        background-color: #c2cbcf;
-        font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco",
-          "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-        font-size: 16px;
-        margin: 0 auto;
-        max-width: 800px;
-      }
-    </style>
-
-    <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-    <!--<link rel="stylesheet" href="style.css">-->
-    <!--<script src="js/main.js"></script>-->
-  </head>
-  <body>
-    <h1>Tp2</h1>
-
-    <!-- Add your site or application content here -->
-
-    <h1 style="background-color: powderblue">Saisie d'une fiche"personne"</h1>
-    <form action="action.html" method="get">
-      <table style="width: 20%">
-        <tr>
-          <td><label for="fname">Nom </label></td>
-          <th>
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              minlength="5"
-              maxlength="20" required
-            /><br /><br />
-          </th>
-        </tr>
-        <tr>
-          <td><label for="lname">Prénom </label></td>
-          <td>
-            <input
-              type="text"
-              id="lname"
-              name="lname"
-              minlength="5"
-              maxlength="20" required
-            /><br /><br />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="date">Date de naissance </label>
-          </td>
-          <td>
-            <input type="date" placeholder="JJ/MM/AAAA" name="date" id="Date" required/><br /><br />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="lname">Adresse </label>
-          </td>
-          <td>
-            <input
-              type="text"
-              id="Adresse"
-              name="Adresse"
-              minlength="5"
-              maxlength="50" required
-            /><br /><br />
-          </td>
-        </tr>
-        <tr>
-          <td><label for="email">Mail </label></td>
-          <td>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              minlength="5"
-              maxlength="30" required
-            /><br /><br />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="button" value="valider" onclick="validation()" />
-            <input type="submit" value="envoyer" />
-          </td>
-        </tr>
-      </table>
-    </form>
-    <br /><br />
-
-    <div
-      style="
-        background-color: pink;
-        color: black;
-        padding: 5px;
-        border-color: black;
-      "
-      id="Error"
-    >
-      <br /><br />
-    </div>
-
-    <div
-      style="background-color: green; color: white; padding: 5px"
-      id="resultat"
-    ></div>
-    <br /><br />
-  </body>
-</html>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>imane takhi</title>
+      <meta name="description" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+      <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+      <!-- Place favicon.ico in the root directory -->
+  
+      <style>
+        body {
+          background-color: #e9ebee;
+          font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco",
+            "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+          font-size: 16px;
+          margin: 0 auto;
+          max-width: 800px;
+        }
+      </style>
+  
+      <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
+      <!--<link rel="stylesheet" href="style.css">-->
+      <!--<script src="js/main.js"></script>-->
+    </head>
+    <body>
+      <h1>Tp2</h1>
+      <!-- Add your site or application content here -->
+      <h1 style="background-color: powderblue">Saisie d'une fiche"personne"</h1>
+      
+      <form action="action.html" method="get">
+        <!-- votre code html avec tous les champs de saisie-->
+      
+      <p>
+        <label for="lname">Nom</label>
+        <input
+          type="text"
+          name="lname"
+          minlength="2"
+          maxlength="20"
+          required
+        />
+        <span class="icon-ok">✔</span>
+      </p>
+      <p>
+        <label for="fname">Prénom</label>
+        <input
+          type="text"
+          name="fname"
+          minlength="2"
+          maxlength="20"
+          required
+        />
+        <span class="icon-ok">✔</span>
+      </p>
+      <p>
+        <label for="birthday">Date de naissance</label>
+        <td>
+          <input type="date" placeholder="JJ/MM/AAAA" id="Date" name="date" />
+          <span class="icon-ok">✔</span><br><br />
+      </td>
+      <p>
+        <label for="Adresse">Adresse</label>
+        <input
+          type="text"
+          name="Adresse"
+          minlength="2"
+          maxlength="20"
+          required
+        />
+        <span class="icon-ok">✔</span>
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          minlength="2"
+          maxlength="20"
+          required
+        />
+        <span class="icon-ok">✔</span>
+      </p>
+      <tr>
+        <td>
+          <input type="submit" value="envoyer" />
+        </td>
+      </tr>
+      
+      <link rel="stylesheet" href="style.css" />
+      
+    </table>
+  </form>
+  <br /><br />
+  
