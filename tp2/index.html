@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript" src="formulaire.js"></script>
+    <link rel="stylesheet" href="tp2.css" />
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>TP2</title>
@@ -12,7 +14,7 @@
 
     <style>
       body {
-        background-color: #e9ebee;
+        background-color: #c2cbcf;
         font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco",
           "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
         font-size: 16px;
@@ -26,9 +28,97 @@
     <!--<script src="js/main.js"></script>-->
   </head>
   <body>
-    <h1>tp2</h1>
+    <h1>Tp2</h1>
+
     <!-- Add your site or application content here -->
-    <p>Hello world! This is HTML5 Boilerplate.</p>
-    <img src="../galilee.png" alt="Logo Galilee" />
+
+    <h1 style="background-color: powderblue">Saisie d'une fiche"personne"</h1>
+    <form action="action.html" method="get">
+      <table style="width: 20%">
+        <tr>
+          <td><label for="fname">Nom </label></td>
+          <th>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              minlength="5"
+              maxlength="20"
+            /><br /><br />
+          </th>
+        </tr>
+        <tr>
+          <td><label for="lname">Prénom </label></td>
+          <td>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              minlength="5"
+              maxlength="20"
+            /><br /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="date">Date de naissance </label>
+          </td>
+          <td>
+            <input type="date" placeholder="JJ/MM/AAAA" id="Date" /><br /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="lname">Adresse </label>
+          </td>
+          <td>
+            <input
+              type="text"
+              id="Adresse"
+              name="Adresse"
+              minlength="5"
+              maxlength="50"
+            /><br /><br />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Mail </label></td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              minlength="5"
+              maxlength="30"
+            /><br /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="valider" onclick="validation()" />
+            <input type="submit" value="envoyer" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <br /><br />
+
+    <div
+      style="
+        background-color: pink;
+        color: black;
+        padding: 5px;
+        border-color: black;
+      "
+      id="Error"
+    >
+      <br /><br />
+    </div>
+
+    <div
+      style="background-color: green; color: white; padding: 5px"
+      id="resultat"
+    ></div>
+    <br /><br />
   </body>
 </html>
